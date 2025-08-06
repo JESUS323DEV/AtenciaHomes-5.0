@@ -1,0 +1,139 @@
+/* =====================
+   Reset Básico-IMPORTANTE
+   ===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    /* Variables globales para reutilizar colores */
+    --color-amarillo: #ffc800;
+    --color-azul-oscuro: #154360;
+    --color-azul-claro: #2c8dc9;
+}
+
+section[id] {
+    scroll-margin-top: 100px;
+    /* Ajustalo según tu navbar */
+}
+
+/*======================
+MAIN-SECCIÓN-1-QUIENES-SOMOS
+========================*/
+
+/*background-img-subtitle*/
+.background-img-subtitle {
+
+    background-image: url(../media/img/nav_background_color.png);
+}
+
+/*estilos-iconos*/
+.cont-color-icon {
+
+    color: var(--color-azul-oscuro);
+}
+
+/*ESTILO-SUBTITULO*/
+
+.quienes-somos-h5 {
+
+    border-bottom: 2px solid var(--color-amarillo);
+    color: var(--color-azul-oscuro);
+}
+
+/*FONT-SIZE-QUIENES-SOMOS*/
+.quienes-somos-fs {
+
+    font-size: 2.5rem;
+}
+
+/*ESTILOS-SUMMARY*/
+.cont-summary {
+
+    border: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+summary::after {
+    display: none;
+}
+
+.cont-summary:hover {
+
+    background-color: #e7f6ff;
+}
+
+
+
+/* Cuando está abierto, cambiamos el símbolo */
+details[open] summary::after {
+    content: "×";
+    /* cambia a X al abrir */
+}
+
+/* Cuando el details está abierto, quitamos el borde de abajo al summary */
+details[open] summary {
+    border: none;
+}
+
+details[open] summary:focus {
+
+    background-color: #e7f6ff;
+}
+
+/*======================
+MEDIA QUERIES PERSONALIZADOS
+========================*/
+/* XS (≤575.98px): móviles “standard” */
+@media (max-width: 575.98px) {
+
+    .cont-w-100 {
+
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .quienes-somos-fs {
+
+        font-size: 1.9rem;
+        font-weight: bold;
+    }
+
+    .cont-p-subtitle {
+
+        font-size: 0.9rem !important;
+    }
+
+    summary::after {
+        position: absolute;
+        right: 0;
+        font-size: 1.5rem;
+        transition: all 0.3s ease;
+    }
+
+
+}
+
+/* SM (576px–767.98px): móviles horizontales */
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+/* MD (768px - 991.98px): tablets verticales */
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/* LG (992px–1199.98px): tablets horizontales, mini laptops ipad-pro */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* Resolución específica: 1366x768 (ipad-pro-horizontal) */
+@media (min-width: 1366px) and (max-width: 1366px) {}

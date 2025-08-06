@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Yisus">
+    <meta name="description" content="Página informativa">
+    <meta name="keywords" content="folleto, informativa, alquiler, habitaciones, piso">
+    <title>Atencia Homes - La mejor opción</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Layout-menu-nav-footer-CSS -->
+    <link rel="stylesheet" href="css3/menu-footer-responsive.css">
+
+    <!--MAIN-PAGE-2-CSS-->
+    <link rel="stylesheet" href="css3/main-page2.css">
+
+
+
+
+</head>
+
+<body>
+    <!--AQUÍ EMPIEZA EL HEADER -->
+
+    <header class="background-header" id="quienes-somos-inicio">
+        <nav class="navbar navbar-expand-lg fixed-top" id="navbar" aria-label="Menú Principal">
+            <div class="container">
+
+                <!-- Logo accesible con aria-label y alt en la imagen -->
+                <a class="navbar-brand" href="#quienes-somos-inicio" aria-label="Inicio Atencia Homes">
+                    <img class="img-fluid logo-principal mx-0 mx-lg-5 p-1" src="media/img/logo_sin_espacio_extra.png"
+                        alt="Logo Principal de Atencia Homes">
+                </a>
+
+                <!-- Botón hamburguesa con icono y accesibilidad -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Abrir o cerrar menú de navegación">
+                    <span><i class="bi bi-list text-white fs-1"></i></span>
+                </button>
+
+                <!-- Contenido colapsable del menú -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto gap-1 gap-lg-5" role="menubar">
+
+                        <!-- ========== DROPDOWN: SOLUCIONES ========== -->
+                        <!-- Importante: usa <button> en lugar de <a> para ser accesible y funcional -->
+                        <li class="nav-item dropdown p-1" role="none">
+                            <button class="nav-link dropdown-toggle text-white " role="menuitem"
+                                data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Soluciones</button>
+
+                            <ul class="dropdown-menu" role="menu" aria-label="Submenú Soluciones">
+                                <li role="none"><a class="dropdown-item" href="../#adios-problemas"
+                                        role="menuitem">Adiós
+                                        problemas</a>
+                                </li>
+                                <li role="none"><a class="dropdown-item" href="../#como-funciona" role="menuitem">¿Cómo
+                                        Funciona?</a></li>
+                                <li role="none"><a class="dropdown-item" href="../#propietarios"
+                                        role="menuitem">Propietarios</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- ========== DROPDOWN: SOBRE NOSOTROS ========== -->
+                        <li class="nav-item dropdown p-1" role="none">
+                            <button class="nav-link dropdown-toggle text-white" role="menuitem"
+                                data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Sobre
+                                Nosotros</button>
+                            <ul class="dropdown-menu " role="menu" aria-label="Submenú ¿Quiénes somos?">
+                                <li role="none"><a class="dropdown-item" href="#quienes-somos" role="menuitem">¿Quiénes
+                                        somos?</a>
+                                </li>
+                                <li role="none"><a class="dropdown-item" href="#preguntas-frecuentes"
+                                        role="menuitem">Preguntas frecuentes</a>
+                                </li>
+
+                                <li role="none"><a class="dropdown-item" href="#galeria"
+                                        role="menuitem">Galería de Imágenes</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <!-- ========== DROPDOWN: CONTACTO ========== -->
+                        <!-- Incluye tel, correo y WhatsApp con accesibilidad -->
+                        <li class="nav-item dropdown p-1" role="none">
+                            <button class="nav-link dropdown-toggle text-white" role="menuitem"
+                                data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Contacto</button>
+
+                            <ul class="dropdown-menu" role="menu" aria-label="Submenú Contacto">
+                                <li class="p-2" role="none">Teléfono:<a class="dropdown-item"
+                                        href="tel:+34642429362">+34 642 42 93
+                                        62</a></li>
+
+                                <li class="p-2" role="none">Correo Electrónico<a class="dropdown-item"
+                                        href="mailto:atenciahomes@gmail.com">atenciahomes@gmail.com</a></li>
+
+                                <li class="p-2 text-start" role="none"><a class="dropdown-item"
+                                        href="https://wa.me/34642429362" target="_blank">O escríbenos por
+                                        <i class="bi bi-whatsapp" aria-hidden="true"></i> </a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item d-flex align-items-center li-propiedades "><a class="nav-link text-white "
+                                href="index.html#inicio">Inicio</a></li>
+                    </ul>
+
+                    <!-- ========== CTA SOLO VISIBLE EN MÓVILES ========== -->
+                    <div class="my-5 my-lg-0 text-center d-block d-lg-none ">
+                        <a class="btn-estudio-free px-5 py-2" href="#" role="button"
+                            aria-label="Ir a contacto por WhatsApp">
+                            Solicita tu estudio gratuito
+                            <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Separador visual bajo el header solo visible en pantallas grandes -->
+        <div class="barra-header-azul d-none d-md-block my-2" aria-hidden="true"></div>
+
+        <!--text-h2-DESCUBRE CÓMO ALQUILAR TU VIVIENDA-header-->
+        <div class="container mt-5 text-warning d-flex justify-content-end">
+            <h2 class="fw-bold p-2 cont-w-md text-center w-50 cont-w-100 text-lg-start">DESCUBRE CÓMO ALQUILAR TU
+                VIVIENDA
+                MAXIMIZANDO TUS
+                INGRESOS.</h2>
+        </div>
+
+        <!--text-h1-Brindamos soluciones a propietarios-header-->
+        <div class="container text-white d-flex justify-content-end my-5">
+            <h1 class="display-3 text-center text-lg-end w-75 cont-w-100 fw-bold p-2">Brindamos soluciones a
+                propietarios que no desean preocuparse por su alquiler.
+            </h1>
+        </div>
+
+        <!--text-p-Somos tu inquilino perfecto-header-->
+        <p class="text-warning text-center fs-2">Somos tu inquilino perfecto.</p>
+
+        <!--button-Solicita tu estudio-gratuito-header-Solo en pantalla grande-->
+        <div class="container text-center mt-4">
+            <a class="btn-estudio-free text-center py-2 px-5" href="#">Solicita tu estudio gratuito <i
+                    class="bi bi-whatsapp" aria-hidden="true"></i></a>
+        </div>
+    </header>
+    <!--AQUÍ TERMINA EL HEADER -->
+    <main>
+        <section id="quienes-somos" aria-labelledby="quienes-somos">
+            <div class="container mt-5">
+
+                <div class="background-img-subtitle">
+                    <h2 class="text-warning p-3">SOBRE ATENCIA HOMES</h2>
+                </div>
+
+                <div class="text-center my-3 my-lg-5">
+                    <h5 class="quienes-somos-h5 w-75 mx-auto p-3 cont-w-100  quienes-somos-fs">Quiénes somos y qué
+                        hacemos en Atencia Homes</h5>
+                    <p class="fw-bold cont-p-subtitle p-1">Especialistas en gestión Rent to Rent de habitaciones. Tu
+                        propiedad, nuestra
+                        responsabilidad.</p>
+                </div>
+
+                <p class="text-center w-50 mx-auto fs-3 cont-w-100">En Atencia Homes somos una empresa especializada en
+                    la gestión integral de viviendas bajo el modelo
+                    Rent to Rent, orientado al coliving profesional. Ofrecemos soluciones a propietarios particulares,
+                    herederos, inversores y pequeños tenedores que buscan: </p>
+
+                <div class="row d-flex align-items-center justify-content-center my-5">
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <p class="d-flex flex-column text-center"><i class="bi bi-cash-coin fs-2"></i><span>Tener pagos
+                                mensuales garantizados, sin
+                                impagos ni inquilinos problemáticos.</span></p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+
+                        <p class="d-flex flex-column text-center"><i
+                                class="bi bi-graph-up-arrow fs-2"></i><span>Rentabilizar sus pisos sin
+                                gestionar alquileres ni problemas varios.</span></p>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <p class="d-flex flex-column text-center"><i
+                                class="bi bi-house-check-fill fs-2"></i><span>Mantener
+                                sus viviendas en buen
+                                estado y completamente seguras.</span></p>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <p class="d-flex flex-column text-center"><i
+                                class="bi bi-person-x-fill fs-2"></i><span>Desentenderse de la gestión y del
+                                día a día del alquiler. Tú solo disfrutas beneficios.</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--PREGUNTAS-FRECUENTES-->
+        <section id="preguntas-frecuentes">
+            <div class="container my-5">
+
+                <h5  class="w-50 cont-w-100 text-center mx-auto fs-2 mb-4 p-3 quienes-somos-h5">Nuestros clientes nos
+                    preguntan</h5>
+
+                <div class="d-flex flex-column align-items-center justify-content-center ">
+
+                    <details class="w-75 cont-w-100">
+                        <summary class="cont-summary fs-3 p-3 ">
+                            <span>¿Por qué Atencia Homes?</span>
+                            <i class="bi bi-plus-lg" aria-hidden="true"></i>
+                        </summary>
+
+                        <p class=" p-3 ">
+                            En <span class="fw-bold"> Atencia Homes</span> tratamos cada propiedad como si fuera propia.
+                            Somos especialistas en la
+                            gestión de viviendas destinadas al alquiler por habitaciones, operando bajo el modelo <span
+                                class="fw-bold">Rent
+                                to Rent.</span> <br> Colaboramos con propietarios que desean rentabilizar sus inmuebles
+                            sin preocuparse
+                            por la gestión, confiándonos su vivienda con total tranquilidad.
+
+                            Nos distingue un enfoque profesional y riguroso, un compromiso firme con el mantenimiento y
+                            cuidado del inmueble, una comunicación clara y constante. La confianza y fidelidad de
+                            nuestros clientes es nuestro mejor aval.
+                        </p>
+                    </details>
+
+
+                    <details class=" w-75 cont-w-100">
+                        <summary class="cont-summary fs-3 p-3"><span>¿Qué es el Rent to Rent coliving?</span><i
+                                class="bi bi-plus-lg" aria-hidden="true"></i></summary>
+                        <p class=" p-3 ">El modelo <span class="fw-bold">Rent to Rent</span> consiste en que <span
+                                class="fw-bold"> Atencia Homes</span>
+                            alquila directamente
+                            tu vivienda, la
+                            acondiciona para el alquiler por habitaciones y se encarga de subarrendarla a perfiles
+                            cuidadosamente seleccionados. Todo ello bajo el enfoque coliving, promoviendo una
+                            convivencia
+                            responsable, profesional y sin complicaciones para el propietario.</p>
+                    </details>
+
+
+                    <details class=" w-75 cont-w-100">
+                        <summary class="cont-summary fs-3 p-3  "><span>¿Qué ofrecemos?</span><i class="bi bi-plus-lg"
+                                aria-hidden="true"></i></summary>
+                        <p class=" p-3 ">En <span class="fw-bold">Atencia Homes</span> ofrecemos un modelo legal y
+                            transparente
+                            un contrato
+                            directo, sin agencias
+                            de por
+                            medio, alquilando tu vivienda como empresa mediante un acuerdo
+                            profesional con una duración de entre 3 y 7 años. Nos encargamos del mantenimiento integral
+                            del
+                            inmueble, tanto preventivo como correctivo, para asegurar que siempre se mantenga en óptimas
+                            condiciones.
+                            Garantizamos un uso responsable de la propiedad, subarrendando únicamente a perfiles
+                            seleccionados y promoviendo una convivencia cuidada bajo normas claras de coliving.
+                            Tendrás acceso a atención personalizada 24/7, con un canal directo con nosotros para
+                            resolver
+                            cualquier incidencia de forma inmediata.
+                            Además, asumimos toda la gestión operativa diaria: suministros, limpieza, incidencias y
+                            seguimiento, para que no tengas que ocuparte de nada.</p>
+                    </details>
+
+                    <details class="w-75 cont-w-100">
+                        <summary class="cont-summary fs-3 p-3"><span>Zonas en la que trabajamos</span><i
+                                class="bi bi-plus-lg" aria-hidden="true"></i>
+                        </summary>
+                        <ul class=" cont-summary-p ">
+
+                            <li class="list-unstyled p-2 fs-4">Actualmente gestionamos viviendas en:</li>
+                            <li class="p-2"><span class="fw-bold">Barcelona</span> (Gràcia, Eixample, Sants, Sant Martí)
+                            </li>
+                            <li class="p-2"><span class="fw-bold">Madrid</span> (Chamberí, Tetuán, Argüelles, Salamanca)
+                            </li>
+                            <li class="p-2"><span class="fw-bold">Valencia</span> (Ruzafa, El Carmen, Benimaclet)</li>
+                            <li class="p-2 fw-bold">Málaga, Sevilla, Bilbao y más en expansión…</li>
+                        </ul>
+                    </details>
+
+
+                </div>
+            </div>
+
+
+        </section>
+
+        <!--GALERÍA-IMÁGENES-->
+        <section id="galeria">
+
+            <div class="container">
+
+                <h5 class="w-75 w-cont-100 text-center mx-auto fs-2 mb-4 p-3 quienes-somos-h5">Algunas de nuestras
+                    hermosas habitaciones </h5>
+
+                <div class="row">
+
+                    <div class="col-12 col-lg-4 mb-3">
+                        <img class="img-fluid" src="media/img/habitacion1.jpeg" alt="Habitación Preciosa 1"
+                            loading="lazy">
+                    </div>
+
+                    <div class="col-12 col-lg-4 mb-3">
+                        <img class="img-fluid" src="media/img/habitacion2.jpeg" alt="Habitación Preciosa 2"
+                            loading="lazy">
+                    </div>
+
+                    <div class="col-12 col-lg-4 mb-3">
+                        <img class="img-fluid" src="media/img/habitacion3.jpeg" alt="Habitación Preciosa 3"
+                            loading="lazy">
+                    </div class="col-12 col-lg-4">
+
+                    <div class="col-12 col-lg-4 mb-3">
+                        <img class="img-fluid" src="media/img/habitacion4.jpeg" alt="Habitación Preciosa 4"
+                            loading="lazy">
+                    </div>
+
+                    <div class="col-12 col-lg-4 mb-3">
+                        <img class="img-fluid" src="media/img/habitacion5.jpeg" alt="Habitación Preciosa 5"
+                            loading="lazy">
+                    </div>
+
+                    <div class="col-12 col-lg-4 mb-3">
+                        <img class="img-fluid" src="media/img/habitacion6.jpeg" alt="Habitación Preciosa 6"
+                            loading="lazy">
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </section>
+    </main>
+    <!-- Modal: Aviso Legal -->
+    <div class="modal fade" id="modalAvisoLegal" tabindex="-1" aria-labelledby="modalAvisoLegalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalAvisoLegalLabel">Aviso Legal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Esta página web es propiedad de <strong>Atencia Homes</strong>. Su finalidad es proporcionar
+                        información
+                        sobre nuestros servicios de gestión de viviendas y alquiler de propiedades.</p>
+
+                    <p>Todos los contenidos de esta web, incluyendo imágenes, textos, logotipos y marcas, son propiedad
+                        de Atencia
+                        Homes o de sus respectivos titulares, y están protegidos por la normativa vigente en materia de
+                        propiedad
+                        intelectual.</p>
+
+                    <p>Atencia Homes no se hace responsable del uso indebido que terceros puedan realizar del contenido
+                        de esta
+                        web, ni de posibles errores técnicos que impidan su funcionamiento adecuado.</p>
+
+                    <p>Este sitio no recoge datos personales a través de formularios. Para cualquier consulta, puede
+                        contactarnos
+                        en <a href="mailto:atenciahomes@gmail.com">atenciahomes@gmail.com</a>.</p>
+
+                    <p>La navegación por este sitio web implica la aceptación de este aviso legal. Atencia Homes se
+                        reserva el
+                        derecho de modificar el contenido en cualquier momento y sin previo aviso.</p>
+
+                    <p><strong>Legislación aplicable:</strong> Leyes del Reino de España.<br>
+                        <strong>Jurisdicción competente:</strong> Juzgados y tribunales de Barcelona.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer class="background-footer">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-12 col-lg-4 text-center">
+                    <img class="logo-footer img-fluid mt-3 mt-lg-0" src="media/img/logo_sin_espacio_extra.png"
+                        alt="Logo Footer">
+                    <p class="text-warning p-0 p-lg-1">Somos la mejor opción</p>
+                </div>
+
+                <div class="col-12 col-lg-4 p-2 text-center">
+                    <p class="text-warning">Teléfono<a class="nav-link text-white" href="tel:+34642429362">+34 642 42 93
+                            62</a>
+                    </p>
+                    <p class="text-warning">Correo Electrónico <a class="nav-link text-white"
+                            href="mailto:atenciahomes@gmail.com">atenciahomes@gmail.com</a></p>
+                </div>
+
+                <div class="col-12 col-lg-3">
+                    <div class="d-flex flex-column">
+                        <i class="text-warning text-center">© 2025 Atencia Homes. Todos los derechos reservados.</i>
+                        <a href="#" class="text-white text-center py-1 py-lg-0" data-bs-toggle="modal"
+                            data-bs-target="#modalAvisoLegal">Aviso
+                            legal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =================== SCRIPTS =================== -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+        crossorigin="anonymous"></script>
+    <script src="js/scripts-menu-responsive.js"></script>
+</body>
+
+</html>

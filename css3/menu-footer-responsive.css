@@ -1,0 +1,517 @@
+/* =====================
+   Reset Básico-IMPORTANTE
+   ===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    /* Variables globales para reutilizar colores */
+    --color-amarillo: #ffc800;
+    --color-azul-oscuro: #154360;
+    --color-azul-claro: #2c8dc9;
+}
+
+
+/*=========================
+BACKGROUND-HEADER
+==========================*/
+
+
+.background-header {
+
+    background-image: url(../media/img/terraza-noche-oscura.png);
+    background-position: center !important;
+    background-size: cover !important;
+    padding-top: 100px;
+    max-width: 100%;
+    min-height: 100vh;
+    padding-bottom: 40px;
+
+}
+
+
+/*=========================
+LOGO-PRINCIPAL
+==========================*/
+
+.logo-principal {
+
+    max-width: 100%;
+    width: 150px;
+}
+
+/*=========================
+--ESTILOS-MENU-SUBMENU-NAV
+==========================*/
+
+.navbar-nav .nav-link:hover {
+
+    color: var(--color-amarillo) !important;
+}
+
+.nav-item:hover {
+
+    background-color: rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.nav-link:focus {
+
+    background-color: rgb(0, 0, 0, 0.0) !important;
+    border-radius: 10px;
+
+}
+
+
+
+
+/* ===============================
+   ESTILOS-NAV-BAR Y DROPDOWN-MENU
+   =============================== */
+.navbar-nav .nav-link:hover {
+    color: var(--color-amarillo) !important;
+    /* Color al pasar el mouse */
+}
+
+
+.dropdown-menu .dropdown-item:hover {
+    color: var(--color-amarillo) !important;
+    background-color: var(--color-azul-oscuro) !important;
+}
+
+.dropdown-menu {
+    background-color: transparent !important;
+    background-image: url(../media/img/nav_background_color.png);
+    color: #ffc800;
+    /* Color de texto */
+}
+
+.dropdown-item {
+    color: white !important;
+    /* Color forzado para elementos del dropdown */
+}
+
+/* Efecto cuando haces focus usando tabulación */
+.navbar-nav .nav-link:focus,
+.navbar-nav .dropdown-item:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Fondo leve al enfocar */
+    color: #ffc300;
+    outline: none;
+    /* Quita borde por defecto del navegador */
+}
+
+
+/* =====================
+   Navbar Estilos-scrolled-js
+   ===================== */
+.navbar.scrolled {
+    background-image: url(../media/img/nav_background_color.png) !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Sombrado al hacer scroll */
+}
+
+.navbar.scrolled {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+}
+
+
+/*=========================
+-BARRAS-DECORATIVAS-
+==========================*/
+
+.barra-header-azul {
+
+    width: 50%;
+    height: 5px;
+    background-color: var(--color-azul-oscuro);
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/*=========================
+-BOTONES-
+==========================*/
+.btn-estudio-free {
+
+    background-color: var(--color-azul-oscuro);
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid;
+    max-width: 20%;
+
+}
+
+
+/*=========================
+-FOOTER-
+==========================*/
+
+.background-footer {
+
+    background-image: url(../media/img/nav_background_color.png);
+    background-position: center;
+}
+
+.logo-footer {
+
+    max-width: 100%;
+    width: 150px;
+}
+
+/* =====================
+   Media Queries (Responsividad)
+   ===================== */
+
+/* XS (≤575.98px): móviles “standard” */
+@media (max-width: 575.98px) {
+ 
+    .nav-item:hover {
+
+        background-color: transparent;
+    }
+
+
+
+    /* Navbar móvil: fijo con fondo e imagen */
+    #navbarSupportedContent {
+        background-image: url(../media/img/nav_background_color.png);
+        background-position: center;
+        background-size: cover;
+        position: fixed;
+        top: 75px;
+        left: 0;
+        right: 0;
+        max-width: 100%;
+        min-height: 100vh;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        padding: 1rem;
+        z-index: 9999;
+    }
+
+    .navbar-toggler {
+
+        color: white !important;
+        border: 1px solid !important;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none !important;
+
+    }
+
+    .btn-estudio-free {
+
+        background-color: var(--color-azul-oscuro);
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        border-radius: 8px;
+        border: 1px solid;
+        
+    }
+
+
+
+
+    /*---Estilos navbar nav-link--- */
+
+    .dropdown {
+
+        border-bottom: 2px solid;
+        font-size: 1.5rem;
+
+    }
+
+    .dropdown-menu {
+
+        font-size: 1.1rem;
+        padding: 1rem;
+
+    }
+
+    .li-propiedades {
+    font-size: 1.5rem;
+    border-bottom: 2px solid ;
+    }
+
+    .nav-link.dropdown-toggle {
+        display: inline-flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-link.dropdown-toggle::after {
+        margin-right: 0 !important;
+        margin-left: auto;
+        /* elimina el margen por defecto */
+    }
+
+    .cont-w-100 {
+
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    /*BACKGROUND-HEADER*/
+
+    .background-header {
+
+        background-position: center !important;
+        background-size: cover !important;
+        padding-top: 100px;
+        max-width: 100%;
+        min-height: auto;
+        padding-bottom: 5rem;
+
+    }
+
+}
+
+/* SM (576px–767.98px): móviles horizontales */
+@media (min-width: 576px) and (max-width: 767.98px) {
+ 
+    /* Navbar móvil: fijo con fondo e imagen */
+    #navbarSupportedContent {
+        background-image: url(../media/img/nav_background_color.png);
+        background-position: center;
+        background-size: cover !important;
+        position: fixed;
+        top: 79px;
+        left: 0;
+        right: 0;
+        max-width: 100%;
+        min-height: 100vh;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        padding: 1rem;
+        z-index: 9999;
+    }
+
+    /*---Estilos navbar nav-link--- */
+
+    .dropdown {
+
+        border-bottom: 2px solid;
+        font-size: 1.5rem;
+
+    }
+
+    .dropdown-menu {
+
+        font-size: 1.1rem;
+        padding: 1rem;
+
+    }
+
+    .li-propiedades {
+        border-bottom: 2px solid;
+        font-size: 1.5rem;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .nav-link.dropdown-toggle {
+        display: inline-flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-link.dropdown-toggle::after {
+        margin-right: 0 !important;
+        margin-left: auto;
+        /* elimina el margen por defecto */
+    }
+
+    .navbar-toggler {
+
+        color: white !important;
+        border: 1px solid !important;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none !important;
+
+    }
+
+    .btn-estudio-free {
+
+        background-color: var(--color-azul-oscuro);
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        border-radius: 8px;
+        border: 1px solid;
+    }
+
+
+    .nav-item:hover {
+
+        background-color: transparent;
+        border-radius: 0;
+    }
+
+    /*BACKGROUND-HEADER*/
+
+    .background-header {
+
+        background-position: center !important;
+        background-size: cover !important;
+        padding-top: 100px;
+        max-width: 100%;
+        min-height: auto;
+        padding-bottom: 5rem;
+    }
+   .cont-w-100 {
+
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+
+}
+
+
+/* MD (768px - 991.98px): tablets verticales */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* Navbar móvil: fijo con fondo e imagen */
+    #navbarSupportedContent {
+        background-image: url(../media/img/nav_background_color.png);
+        background-position: center;
+        background-size: cover;
+        position: fixed;
+        top: 79px;
+        left: 0;
+        right: 0;
+        max-width: 100%;
+        min-height: 100vh;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        padding: 1rem;
+        z-index: 9999;
+    }
+
+    /*---Estilos navbar nav-link--- */
+
+    .dropdown {
+
+        border-bottom: 2px solid;
+        font-size: 1.5rem;
+
+    }
+
+    .dropdown-menu {
+
+        font-size: 1.1rem;
+        padding: 1rem;
+
+    }
+
+    .li-propiedades {
+        border-bottom: 2px solid;
+        font-size: 1.5rem;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .nav-link.dropdown-toggle {
+        display: inline-flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-link.dropdown-toggle::after {
+        margin-right: 0 !important;
+        margin-left: auto;
+        /* elimina el margen por defecto */
+    }
+
+    .navbar-toggler {
+
+        color: white !important;
+        border: 1px solid !important;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none !important;
+
+    }
+
+    .btn-estudio-free {
+
+        background-color: var(--color-azul-oscuro);
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        border-radius: 8px;
+        border: 1px solid;
+
+    }
+
+
+    .nav-item:hover {
+
+        background-color: transparent;
+        border-radius: 0;
+    }
+
+    .cont-w-100 {
+
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+
+    .cont-w-md {
+
+        max-width: 100% !important;
+        width: 60% !important;
+    }
+
+    /*BACKGROUND-HEADER*/
+
+    .background-header {
+
+        background-position: center !important;
+        background-size: cover !important;
+        padding-top: 100px;
+        max-width: 100%;
+        min-height: auto;
+        padding-bottom: 5rem;
+
+    }
+
+}
+
+
+/* LG (992px–1199.98px): tablets horizontales, mini laptops ipad-pro */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    /*BACKGROUND-HEADER*/
+    .background-header {
+
+        background-position: center !important;
+        background-size: cover !important;
+        padding-top: 100px;
+        max-width: 100%;
+        min-height: auto;
+        padding-bottom: 5rem;
+
+    }
+}
+
+
+/* Resolución específica: 1366x768 (ipad-pro-horizontal) */
+@media (min-width: 1366px) and (max-width: 1366px) {
+    /* ipad-pro-horizontal */
+}

@@ -1,0 +1,205 @@
+/* =====================
+   Reset Básico-IMPORTANTE
+   ===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    /* Variables globales para reutilizar colores */
+    --color-amarillo: #ffc800;
+    --color-azul-oscuro: #154360;
+    --color-azul-claro: #2c8dc9;
+}
+
+section[id] {
+    scroll-margin-top: 100px;
+    /* Ajustalo según tu navbar */
+}
+
+/*======================
+MAIN-SECCIÓN-1
+========================*/
+
+/*background-img-subtitle*/
+.background-img-subtitle {
+
+    background-image: url(../media/img/nav_background_color.png);
+}
+
+
+/*estilos-iconos*/
+.cont-color-icon {
+
+    color: var(--color-azul-oscuro);
+}
+
+/*estilos-subtitle "Adiós a los problemas" */
+
+.cont-h5 {
+
+    border-bottom: 2px solid var(--color-amarillo);
+    color: var(--color-azul-oscuro);
+}
+
+/*======================
+MAIN-SECCIÓN-2
+========================*/
+
+
+/*height-img-card Firma-del-contrato*/
+.h-card-img {
+
+    height: 300px;
+
+}
+
+/*-----estilos-text-card---------*/
+.color-tittle-card {
+
+    color: var(--color-azul-oscuro);
+    border-bottom: 1px solid var(--color-amarillo);
+    text-align: center;
+    padding: 0.7rem;
+    margin-bottom: 0.8rem;
+}
+
+.estilos-card-text {
+
+    padding: 1rem;
+
+}
+
+
+.h5-como-funciona {
+
+    border-bottom: 2px solid var(--color-amarillo);
+    color: var(--color-azul-oscuro);
+
+}
+
+/*======================
+MAIN-SECCIÓN-3
+========================*/
+
+.icon-cont {
+
+    color: var(--color-azul-oscuro);
+    font-size: 5rem;
+}
+
+.cont-beneficios-h5 {
+
+    border-bottom: 2px solid var(--color-amarillo);
+    color: var(--color-azul-oscuro);
+}
+
+/*======================
+MEDIA QUERIES PERSONALIZADOS
+========================*/
+/* XS (≤575.98px): móviles “standard” */
+@media (max-width: 575.98px) {
+
+    .h-card-img {
+        height: auto;
+    }
+
+    .text-revalorizamos {
+        font-size: 1rem !important;
+        padding: 0 !important;
+    }
+
+    .cont-w-100 {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .cont-background {
+        background-image: url(../media/img/fondo-anochecer.jpg);
+        background-size: cover;
+        height: auto;
+    }
+
+}
+
+/* SM (576px–767.98px): móviles horizontales */
+@media (min-width: 576px) and (max-width: 767.98px) {
+ 
+    .h-card-img {
+        height: auto;
+    }
+
+    .estilos-card-text {
+        padding: 1rem;
+        font-size: 1.3rem;
+    }
+}
+
+
+/* MD (768px - 991.98px): tablets verticales */
+@media (min-width: 768px) and (max-width: 991.98px) {
+ 
+
+    .cont-w-100 {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .h-card-img {
+        height: auto;
+    }
+
+    .estilos-card-text {
+        padding: 1rem;
+        font-size: 1.3rem;
+    }
+}
+
+
+/* LG (992px–1199.98px): tablets horizontales, mini laptops ipad-pro */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+
+    .h-card-img {
+        height: 300px;
+    }
+
+    .color-tittle-card {
+        border-bottom: none;
+        text-align: center;
+        padding: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .estilos-card-text {
+        padding: 1rem;
+    }
+
+    .card-body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+
+/* Resolución específica: 1366x768 (ipad-pro-horizontal) */
+@media (min-width: 1366px) and (max-width: 1366px) {
+    .color-tittle-card {
+
+        border-bottom: none;
+        text-align: center;
+        padding: 0 !important;
+        margin-bottom: 0 !important;
+
+
+    }
+}

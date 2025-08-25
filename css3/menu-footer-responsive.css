@@ -72,7 +72,6 @@ LOGO-PRINCIPAL
 
 
 
-
 /* ===============================
    ESTILOS-NAV-BAR Y DROPDOWN-MENU
    =============================== */
@@ -150,9 +149,13 @@ LOGO-PRINCIPAL
     border-radius: 8px;
     border: 1px solid;
     max-width: 20%;
-
 }
 
+.quienes-somos {
+
+    border-bottom: 2px solid var(--color-amarillo);
+    font-size: 15px !important;
+}
 
 /*=========================
 -FOOTER-
@@ -176,21 +179,34 @@ LOGO-PRINCIPAL
 
 /* XS (≤575.98px): móviles “standard” */
 @media (max-width: 575.98px) {
- 
+
     .nav-item:hover {
 
         background-color: transparent;
     }
 
+    /*=========================
+            LOGO-PRINCIPAL
+      ==========================*/
+
+    .logo-principal {
+
+        max-width: 100%;
+        width: 100px;
+    }
 
 
-    /* Navbar móvil: fijo con fondo e imagen */
+    /*=========================
+            NAVBAR MÓVIL
+      ==========================*/
+
+    /*--MENU HAMBURGUESA--*/
     #navbarSupportedContent {
         background-image: url(../media/img/nav_background_color.png);
         background-position: center;
         background-size: cover;
         position: fixed;
-        top: 75px;
+        top: 60px;
         left: 0;
         right: 0;
         max-width: 100%;
@@ -202,13 +218,12 @@ LOGO-PRINCIPAL
 
     .navbar-toggler {
 
-        color: white !important;
-        border: 1px solid !important;
+        color: rgb(255, 255, 255) !important;
+        border: none !important;
     }
 
     .navbar-toggler:focus {
         box-shadow: none !important;
-
     }
 
     .btn-estudio-free {
@@ -219,13 +234,12 @@ LOGO-PRINCIPAL
         font-size: 1rem;
         border-radius: 8px;
         border: 1px solid;
-        
     }
 
 
-
-
-    /*---Estilos navbar nav-link--- */
+    /*=========================
+            ESTILOS-DROPDOWN
+      ==========================*/
 
     .dropdown {
 
@@ -241,11 +255,7 @@ LOGO-PRINCIPAL
 
     }
 
-    .li-propiedades {
-    font-size: 1.5rem;
-    border-bottom: 2px solid ;
-    }
-
+    /*--ABRIR-DROPDOWN-DESPLAZADO-DERECHA-- */
     .nav-link.dropdown-toggle {
         display: inline-flex;
         align-items: center;
@@ -258,6 +268,19 @@ LOGO-PRINCIPAL
         /* elimina el margen por defecto */
     }
 
+    /*=========================
+      ESTILOS-PERSONALIZADOS
+      ==========================*/
+
+    /*--LISTA-SECCIÓN-BENEFICIOS--*/
+    .li-propiedades {
+        font-size: 1.5rem;
+        border-bottom: 2px solid;
+    }
+
+
+
+    /*--CONTENEDOR-PERSONALIZADO-MAX-WIDTH-100%--*/
     .cont-w-100 {
 
         max-width: 100% !important;
@@ -281,7 +304,7 @@ LOGO-PRINCIPAL
 
 /* SM (576px–767.98px): móviles horizontales */
 @media (min-width: 576px) and (max-width: 767.98px) {
- 
+
     /* Navbar móvil: fijo con fondo e imagen */
     #navbarSupportedContent {
         background-image: url(../media/img/nav_background_color.png);
@@ -372,7 +395,8 @@ LOGO-PRINCIPAL
         min-height: auto;
         padding-bottom: 5rem;
     }
-   .cont-w-100 {
+
+    .cont-w-100 {
 
         max-width: 100% !important;
         width: 100% !important;
@@ -385,13 +409,17 @@ LOGO-PRINCIPAL
 /* MD (768px - 991.98px): tablets verticales */
 @media (min-width: 768px) and (max-width: 991.98px) {
 
-    /* Navbar móvil: fijo con fondo e imagen */
+    /*=========================
+            NAVBAR MÓVIL
+      ==========================*/
+
+    /*--MENU HAMBURGUESA--*/
     #navbarSupportedContent {
         background-image: url(../media/img/nav_background_color.png);
         background-position: center;
         background-size: cover;
         position: fixed;
-        top: 79px;
+        top: 75px;
         left: 0;
         right: 0;
         max-width: 100%;
@@ -401,7 +429,27 @@ LOGO-PRINCIPAL
         z-index: 9999;
     }
 
-    /*---Estilos navbar nav-link--- */
+    .barra-header-azul {
+
+        display: none !important;
+    }
+
+
+    .navbar-toggler {
+
+        color: white !important;
+        border: none !important;
+    }
+
+    .nav-item:hover {
+
+        background-color: transparent;
+        border-radius: 0;
+    }
+
+    /*=========================
+            ESTILOS-DROPDOWN
+      ==========================*/
 
     .dropdown {
 
@@ -417,13 +465,6 @@ LOGO-PRINCIPAL
 
     }
 
-    .li-propiedades {
-        border-bottom: 2px solid;
-        font-size: 1.5rem;
-        max-width: 100% !important;
-        width: 100% !important;
-    }
-
     .nav-link.dropdown-toggle {
         display: inline-flex;
         align-items: center;
@@ -433,13 +474,6 @@ LOGO-PRINCIPAL
     .nav-link.dropdown-toggle::after {
         margin-right: 0 !important;
         margin-left: auto;
-        /* elimina el margen por defecto */
-    }
-
-    .navbar-toggler {
-
-        color: white !important;
-        border: 1px solid !important;
     }
 
     .navbar-toggler:focus {
@@ -447,22 +481,16 @@ LOGO-PRINCIPAL
 
     }
 
-    .btn-estudio-free {
 
-        background-color: var(--color-azul-oscuro);
-        color: white;
-        text-decoration: none;
-        font-size: 1rem;
-        border-radius: 8px;
-        border: 1px solid;
+    /*=========================
+       ESTILOS-PERSONALIZADOS
+      ==========================*/
 
-    }
-
-
-    .nav-item:hover {
-
-        background-color: transparent;
-        border-radius: 0;
+    .li-propiedades {
+        border-bottom: 2px solid;
+        font-size: 1.5rem;
+        max-width: 100% !important;
+        width: 100% !important;
     }
 
     .cont-w-100 {
@@ -476,6 +504,18 @@ LOGO-PRINCIPAL
 
         max-width: 100% !important;
         width: 60% !important;
+    }
+
+    /*BOTONES*/
+    .btn-estudio-free {
+
+        background-color: var(--color-azul-oscuro);
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        border-radius: 8px;
+        border: 1px solid;
+
     }
 
     /*BACKGROUND-HEADER*/

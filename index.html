@@ -25,24 +25,26 @@
 
   <!--AQUÍ EMPIEZA EL HEADER -->
   <header class="background-header" id="inicio">
-    <nav class="navbar navbar-expand-lg fixed-top" id="navbar" aria-label="Menú Principal">
+    <nav class="navbar navbar-expand-lg fixed-top " id="navbar" aria-label="Menú Principal">
       <div class="container">
 
         <!-- Logo accesible con aria-label y alt en la imagen -->
-        <a class="navbar-brand" href="#inicio" aria-label="Inicio Atencia Homes">
-          <img class="img-fluid logo-principal mx-0 mx-lg-5 p-1" src="media/img/logo_sin_espacio_extra.png"
-            alt="Logo Principal de Atencia Homes">
-        </a>
+        <div class=" d-flex align-items-center justify-content-center gap-2 gap-lg-0">
+          <a class="navbar-brand order-1 " href="#inicio" aria-label="Inicio Atencia Homes">
+            <img class="img-fluid logo-principal mx-0 mx-lg-5" src="media/img/logo_sin_espacio_extra.png"
+              alt="Logo Principal de Atencia Homes">
+          </a>
 
-        <!-- Botón hamburguesa con icono y accesibilidad -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir o cerrar menú de navegación">
-          <span><i class="bi bi-list text-white fs-1"></i></span>
-        </button>
-
+          <!-- Botón hamburguesa con icono y accesibilidad -->
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Abrir o cerrar menú de navegación">
+            <span><i class="bi bi-list text-white fs-1"></i></span>
+          </button>
+        </div>
         <!-- Contenido collapsable del menú -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto gap-1 gap-lg-5" role="menubar">
+          <ul class="navbar-nav mx-0 mx-lg-auto gap-1 gap-lg-5" role="menubar">
 
             <!-- ========== DROPDOWN: SOLUCIONES ========== -->
             <!-- Importante: usa <button> en lugar de <a> para ser accesible y funcional -->
@@ -64,10 +66,12 @@
                 aria-expanded="false" aria-haspopup="true">Sobre Nosotros</button>
               <ul class="dropdown-menu " role="menu" aria-label="Submenú ¿Quiénes somos?">
                 <li role="none"><a class="dropdown-item" href="quienes-somos.html#quienes-somos"
-                    role="menuitem">¿Quiénes somos?</a></li>
+                    role="menuitem">¿Quiénes
+                    somos?</a></li>
                 <li role="none"><a class="dropdown-item" href="quienes-somos.html#preguntas-frecuentes"
                     role="menuitem">Preguntas frecuentes</a></li>
-                <li role="none"><a class="dropdown-item" href="quienes-somos.html#galeria" role="menuitem">Galería de Imágenes</a>
+                <li role="none"><a class="dropdown-item" href="quienes-somos.html#galeria" role="menuitem">Galería de
+                    Imágenes</a>
                 </li>
               </ul>
             </li>
@@ -85,7 +89,7 @@
                 <li class="p-2" role="none">Correo Electrónico<a class="dropdown-item"
                     href="mailto:atenciahomes@gmail.com">atenciahomes@gmail.com</a></li>
 
-                <li class="p-2 text-start" role="none"><a class="dropdown-item" href="https://wa.me/34642429362"
+                <li class="p-2 text-start" role="none"><a class="dropdown-item" href="https://wa.link/gnx4ei"
                     target="_blank">O escríbenos por
                     <i class="bi bi-whatsapp" aria-hidden="true"></i> </a></li>
               </ul>
@@ -94,17 +98,23 @@
 
           <!-- ========== CTA SOLO VISIBLE EN MÓVILES ========== -->
           <div class="my-5 my-lg-0 text-center d-block d-lg-none ">
-            <a class="btn-estudio-free px-5 py-2" href="#" role="button" aria-label="Ir a contacto por WhatsApp">
+            <a class="btn-estudio-free px-5 py-2" href="https://wa.link/gnx4ei" role="button"
+              aria-label="Ir a contacto por WhatsApp">
               Solicita tu estudio gratuito
               <i class="bi bi-whatsapp" aria-hidden="true"></i>
             </a>
           </div>
         </div>
+
+        <!-- ========== LINK QUIÉNES SOMOS-SOLO VISIBLE EN MÓVILES ========== -->
+        <div class="quienes-somos d-block d-lg-none">
+          <a class="nav-link text-white py-1 px-1 " href="quienes-somos.html#quienes-somos">¿Quiénes Somos?</a>
+        </div>
       </div>
     </nav>
 
     <!-- Separador visual bajo el header solo visible en pantallas grandes -->
-    <div class="barra-header-azul d-none d-md-block my-2" aria-hidden="true"></div>
+    <div class="barra-header-azul d-none d-lg-block my-2" aria-hidden="true"></div>
 
     <!--text-h2-DESCUBRE CÓMO ALQUILAR TU VIVIENDA-header-->
     <div class="container mt-5 text-warning d-flex justify-content-end">
@@ -125,17 +135,89 @@
 
     <!--button-Solicita tu estudio-gratuito-header-Solo en pantalla grande-->
     <div class="container text-center mt-4">
-      <a class="btn-estudio-free text-center py-2 px-5" href="#">Solicita tu estudio gratuito <i class="bi bi-whatsapp"
-          aria-hidden="true"></i></a>
+      <a class="btn-estudio-free text-center py-2 px-5" href="https://wa.link/gnx4ei">Solicita tu estudio gratuito <i
+          class="bi bi-whatsapp" aria-hidden="true"></i></a>
     </div>
   </header>
   <!--AQUÍ TERMINA EL HEADER -->
 
 
 
-  <!--AQUÍ EMPIEZA EL MAIN -->
+  <!--=====================MODAL-FIJO-PARA-IMÁGENES============================-->
+
+  <!-- botón fijo para galería de img-->
+
+
+  <button type="button" class="btn text-white cont-btn-modal position-fixed bottom-0 end-0 m-3" data-bs-toggle="modal"
+    data-bs-target="#fullscreenModal" style="z-index: 3000;">
+    Galería de Imágenes
+  </button>
+
+
+  <!--MODAL-IMÁGENES-FULLSCREEN -->
+
+  <div class="modal fade" id="fullscreenModal" tabindex="-1" aria-labelledby="fullscreenModal" aria-hidden="true">
+    <div class="modal-dialog cont-modal mx-auto ">
+      <div class="modal-content bg-dark">
+        <div class="modal-header border-1">
+          <h5 class="mx-0 mx-lg-5 p-2 fs-3 text-white">Algunas de nuestras hermosas habitaciones</h5>
+
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="container">
+            <div class="row mt-4">
+
+              <div class="col-12 col-lg-4 mb-3">
+                <img class="img-fluid" src="media/img/habitacion1.jpeg" alt="Habitación 1">
+              </div>
+
+              <div class="col-12 col-lg-4 mb-3">
+                <img class="img-fluid" src="media/img/habitacion2.jpeg" alt="Habitación 2">
+              </div>
+
+              <div class="col-12 col-lg-4 mb-3">
+                <img class="img-fluid" src="media/img/habitacion3.jpeg" alt="Habitación 3">
+              </div>
+
+              <div class="col-12 col-lg-4 mb-3">
+                <img class="img-fluid" src="media/img/habitacion4.jpeg" alt="Habitación 4">
+              </div>
+
+              <div class="col-12 col-lg-4 mb-3">
+                <img class="img-fluid" src="media/img/habitacion5.jpeg" alt="Habitación 5">
+              </div>
+
+              <div class="col-12 col-lg-4 mb-3">
+                <img class="img-fluid" src="media/img/habitacion6.jpeg" alt="Habitación 6">
+              </div>
+
+              <div class="col-12 col-lg-4 mb-3">
+                <img class="img-fluid" src="media/img/habitacion7.jpeg.jpg" alt="Habitación 6">
+              </div>
+
+              <div class="col-12 col-lg-4 mb-3">
+                <img class="img-fluid" src="media/img/habitacion8.jpeg.jpg" alt="Habitación 6">
+              </div>
+
+              <div class="col-12 col-lg-4 mb-3">
+                <img class="img-fluid" src="media/img/habitacion9.jpeg.jpg" alt="Habitación 6">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--=================================================-->
+
+
+
+
+  <!--==========================AQUÍ EMPIEZA EL MAIN======================================-->
   <main>
-    <!--==================================================================-->
 
     <!--AQUÍ EMPIEZA LA SECCIÓN-1-ADIÓS-PROBLEMAS -->
     <section id="adios-problemas" aria-labelledby="titulo-adios-problemas">
@@ -214,9 +296,7 @@
     </section>
     <!-- FIN-SECCIÓN-1-ADIÓS-PROBLEMAS -->
 
-
-
-    <!--==================================================================-->
+    <!--=================================================-->
 
     <!--AQUÍ-EMPIEZA-LA-SECCIÓN-2-COMO-FUNCIONA -->
     <section id="como-funciona">
@@ -329,8 +409,7 @@
       </div>
     </section>
 
-
-    <!--==================================================================-->
+    <!--=================================================-->
 
     <!--AQUÍ-EMPIEZA-LA-SECCIÓN-3 -->
     <!-- SECCIÓN 3.1: Qué te ofrecemos como propietario -->
@@ -404,61 +483,63 @@
       <div class="container-fluid mb-5">
         <div class="row d-flex align-items-stretch justify-content-center">
 
-          <div class="text-center py-3 bg-dark mt-5 mb-3 text-warning">
+          <div class="text-center py-3 bg-dark mt-5 mb-3 text-warning ">
             <h4 id="titulo-revalorizamos">
               <i class="bi bi-currency-exchange" aria-hidden="true"></i> REVALORIZAMOS TU PISO
             </h4>
           </div>
+          
+            <div class="col-6 col-md-4  col-xl-2  ">
+              <p class="d-flex flex-column h-100 text-center">
+                <i class="bi bi-house-gear-fill icon-cont" aria-hidden="true"></i>
+                <span class="fs-5 text-revalorizamos ">
+                  Reacondicionamos todos los espacios sin coste adicional para el propietario.
+                </span>
+              </p>
+            </div>
 
-          <div class="col-6 col-lg-2">
-            <p class="d-flex flex-column h-100 text-center">
-              <i class="bi bi-house-gear-fill icon-cont" aria-hidden="true"></i>
-              <span class="fs-5 p-2 mx-auto text-revalorizamos">
-                Realizamos el reacondicionamiento de los espacios sin coste adicional para el propietario.
-              </span>
-            </p>
-          </div>
+            <div class="col-6 col-md-4  col-xl-2 ">
+              <p class="d-flex flex-column h-100 text-center">
+                <i class="bi bi-house-down-fill icon-cont" aria-hidden="true"></i>
+                <span class="fs-5  mx-auto text-revalorizamos">
+                  Instalamos mobiliario funcional, atractivo y de alta durabilidad.
+                </span>
+              </p>
+            </div>
 
-          <div class="col-6 col-lg-2">
-            <p class="d-flex flex-column h-100 text-center">
-              <i class="bi bi-house-down-fill icon-cont" aria-hidden="true"></i>
-              <span class="fs-5 p-2 mx-auto text-revalorizamos">
-                Instalamos mobiliario funcional, atractivo y de alta durabilidad.
-              </span>
-            </p>
-          </div>
+            <div class="col-6 col-md-4  col-xl-2 ">
+              <p class="d-flex flex-column h-100 text-center">
+                <i class="bi bi-house-add-fill icon-cont" aria-hidden="true"></i>
+                <span class="fs-5 mx-auto text-revalorizamos">
+                  Llevamos a cabo un mantenimiento preventivo regular para preservar el estado del inmueble.
+                </span>
+              </p>
+            </div>
 
-          <div class="col-6 col-lg-2">
-            <p class="d-flex flex-column h-100 text-center">
-              <i class="bi bi-house-add-fill icon-cont" aria-hidden="true"></i>
-              <span class="fs-5 mx-auto text-revalorizamos">
-                Llevamos a cabo un mantenimiento preventivo regular para preservar el estado del inmueble.
-              </span>
-            </p>
-          </div>
+            <div class="col-6 col-md-4  col-xl-2 ">
+              <p class="d-flex flex-column h-100 text-center">
+                <i class="bi bi-house-up-fill icon-cont" aria-hidden="true"></i>
+                <span class="fs-5  mx-auto text-revalorizamos">
+                  Optimizamos el aspecto general de la vivienda, prolongando su vida útil.
+                </span>
+              </p>
+            </div>
 
-          <div class="col-6 col-lg-2">
-            <p class="d-flex flex-column h-100 text-center">
-              <i class="bi bi-house-up-fill icon-cont" aria-hidden="true"></i>
-              <span class="fs-5 p-2 mx-auto text-revalorizamos">
-                Optimizamos el aspecto general de la vivienda, prolongando su vida útil.
-              </span>
-            </p>
-          </div>
-
-          <div class="col-12 col-lg-2">
-            <p class="d-flex flex-column h-100 text-center">
-              <i class="bi bi-currency-euro icon-cont" aria-hidden="true"></i>
-              <span class="fs-5 p-2 mx-auto text-revalorizamos">
-                El resultado: más rentabilidad, menos desgaste, cero gestiones para ti.
-              </span>
-            </p>
-          </div>
-
+            <div class="col-12 col-md-4 col-xl-2 ">
+              <p class="d-flex flex-column h-100 text-center">
+                <i class="bi bi-currency-euro icon-cont" aria-hidden="true"></i>
+                <span class="fs-5  mx-auto text-revalorizamos">
+                  El resultado: más rentabilidad, menos desgaste, cero gestiones para ti.
+                </span>
+              </p>
+            </div>
+          
         </div>
       </div>
     </section>
   </main>
+
+  <!--========================FIN-MAIN=====================================-->
   <!--FOOTER-->
   <footer class="background-footer">
     <div class="container">
@@ -522,6 +603,7 @@
       </div>
     </div>
   </div>
+
   <!-- =================== SCRIPTS =================== -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

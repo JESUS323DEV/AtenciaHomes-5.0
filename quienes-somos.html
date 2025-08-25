@@ -33,18 +33,19 @@
             <div class="container">
 
                 <!-- Logo accesible con aria-label y alt en la imagen -->
-                <a class="navbar-brand" href="#quienes-somos-inicio" aria-label="Inicio Atencia Homes">
-                    <img class="img-fluid logo-principal mx-0 mx-lg-5 p-1" src="media/img/logo_sin_espacio_extra.png"
-                        alt="Logo Principal de Atencia Homes">
-                </a>
+                <div class="d-flex align-items-center justify-content-center gap-2 gap-lg-0">
+                    <a class="navbar-brand order-1" href="#quienes-somos-inicio" aria-label="Inicio Atencia Homes">
+                        <img class="img-fluid logo-principal mx-0 mx-lg-5 p-1"
+                            src="media/img/logo_sin_espacio_extra.png" alt="Logo Principal de Atencia Homes">
+                    </a>
 
-                <!-- Botón hamburguesa con icono y accesibilidad -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Abrir o cerrar menú de navegación">
-                    <span><i class="bi bi-list text-white fs-1"></i></span>
-                </button>
-
+                    <!-- Botón hamburguesa con icono y accesibilidad -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Abrir o cerrar menú de navegación">
+                        <span><i class="bi bi-list text-white fs-1"></i></span>
+                    </button>
+                </div>
                 <!-- Contenido colapsable del menú -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto gap-1 gap-lg-5" role="menubar">
@@ -60,7 +61,8 @@
                                         role="menuitem">Adiós
                                         problemas</a>
                                 </li>
-                                <li role="none"><a class="dropdown-item" href="index.html#como-funciona" role="menuitem">¿Cómo
+                                <li role="none"><a class="dropdown-item" href="index.html#como-funciona"
+                                        role="menuitem">¿Cómo
                                         Funciona?</a></li>
                                 <li role="none"><a class="dropdown-item" href="index.html#propietarios"
                                         role="menuitem">Propietarios</a></li>
@@ -80,8 +82,8 @@
                                         role="menuitem">Preguntas frecuentes</a>
                                 </li>
 
-                                <li role="none"><a class="dropdown-item" href="#galeria"
-                                        role="menuitem">Galería de Imágenes</a>
+                                <li role="none"><a class="dropdown-item" href="#galeria" role="menuitem">Galería de
+                                        Imágenes</a>
                                 </li>
 
                             </ul>
@@ -106,9 +108,6 @@
                                         <i class="bi bi-whatsapp" aria-hidden="true"></i> </a></li>
                             </ul>
                         </li>
-
-                        <li class="nav-item d-flex align-items-center li-propiedades "><a class="nav-link text-white "
-                                href="index.html#inicio">Inicio</a></li>
                     </ul>
 
                     <!-- ========== CTA SOLO VISIBLE EN MÓVILES ========== -->
@@ -119,6 +118,12 @@
                             <i class="bi bi-whatsapp" aria-hidden="true"></i>
                         </a>
                     </div>
+                </div>
+
+
+                <!-- ========== LINK QUIÉNES SOMOS-SOLO VISIBLE EN MÓVILES ========== -->
+                <div class="quienes-somos mx-4">
+                    <a class="nav-link text-white py-1 px-1  " href="index.html">Inicio</a>
                 </div>
             </div>
         </nav>
@@ -151,6 +156,80 @@
         </div>
     </header>
     <!--AQUÍ TERMINA EL HEADER -->
+
+    <!--=====================MODAL-FIJO-PARA-IMÁGENES============================-->
+
+    <!-- botón fijo para galería de img-->
+
+
+    <button type="button" class="btn text-white cont-btn-modal position-fixed bottom-0 end-0 m-3" data-bs-toggle="modal"
+        data-bs-target="#fullscreenModal" style="z-index: 3000;">
+        Galería de Imágenes
+    </button>
+
+
+    <!--MODAL-IMÁGENES-FULLSCREEN -->
+
+    <div class="modal fade" id="fullscreenModal" tabindex="-1" aria-labelledby="fullscreenModal" aria-hidden="true">
+        <div class="modal-dialog cont-modal mx-auto ">
+            <div class="modal-content bg-dark">
+                <div class="modal-header border-1">
+                    <h5 class="mx-0 mx-lg-5 p-2 fs-3 text-white">Algunas de nuestras hermosas habitaciones</h5>
+
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row mt-4">
+
+                            <div class="col-12 col-lg-4 mb-3">
+                                <img class="img-fluid" src="media/img/habitacion1.jpeg" alt="Habitación 1">
+                            </div>
+
+                            <div class="col-12 col-lg-4 mb-3">
+                                <img class="img-fluid" src="media/img/habitacion2.jpeg" alt="Habitación 2">
+                            </div>
+
+                            <div class="col-12 col-lg-4 mb-3">
+                                <img class="img-fluid" src="media/img/habitacion3.jpeg" alt="Habitación 3">
+                            </div>
+
+                            <div class="col-12 col-lg-4 mb-3">
+                                <img class="img-fluid" src="media/img/habitacion4.jpeg" alt="Habitación 4">
+                            </div>
+
+                            <div class="col-12 col-lg-4 mb-3">
+                                <img class="img-fluid" src="media/img/habitacion5.jpeg" alt="Habitación 5">
+                            </div>
+
+                            <div class="col-12 col-lg-4 mb-3">
+                                <img class="img-fluid" src="media/img/habitacion6.jpeg" alt="Habitación 6">
+                            </div>
+
+                            <div class="col-12 col-lg-4 mb-3">
+                                <img class="img-fluid" src="media/img/habitacion7.jpeg.jpg" alt="Habitación 6">
+                            </div>
+
+                            <div class="col-12 col-lg-4 mb-3">
+                                <img class="img-fluid" src="media/img/habitacion8.jpeg.jpg" alt="Habitación 6">
+                            </div>
+
+                            <div class="col-12 col-lg-4 mb-3">
+                                <img class="img-fluid" src="media/img/habitacion9.jpeg.jpg" alt="Habitación 6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--=================================================-->
+
+
+    <!--QUIÉNES-SOMOS-->
     <main>
         <section id="quienes-somos" aria-labelledby="quienes-somos">
             <div class="container mt-5">
@@ -205,11 +284,12 @@
         <section id="preguntas-frecuentes">
             <div class="container my-5">
 
-                <h5  class="w-50 cont-w-100 text-center mx-auto fs-2 mb-4 p-3 quienes-somos-h5">Nuestros clientes nos
+                <h5 class="w-50 cont-w-100 text-center mx-auto fs-2 mb-4 p-3 quienes-somos-h5">Nuestros clientes nos
                     preguntan</h5>
 
                 <div class="d-flex flex-column align-items-center justify-content-center ">
 
+                    <!--¿Por qué Atencia Homes?-->
                     <details class="w-75 cont-w-100">
                         <summary class="cont-summary fs-3 p-3 ">
                             <span>¿Por qué Atencia Homes?</span>
@@ -232,6 +312,7 @@
                     </details>
 
 
+                    <!--¿Qué es el Rent to Rent coliving?-->
                     <details class=" w-75 cont-w-100">
                         <summary class="cont-summary fs-3 p-3"><span>¿Qué es el Rent to Rent coliving?</span><i
                                 class="bi bi-plus-lg" aria-hidden="true"></i></summary>
@@ -246,6 +327,7 @@
                     </details>
 
 
+                    <!--¿Qué ofrecemos?-->
                     <details class=" w-75 cont-w-100">
                         <summary class="cont-summary fs-3 p-3  "><span>¿Qué ofrecemos?</span><i class="bi bi-plus-lg"
                                 aria-hidden="true"></i></summary>
@@ -268,6 +350,7 @@
                             seguimiento, para que no tengas que ocuparte de nada.</p>
                     </details>
 
+                    <!--Zonas en la que trabajamos-->
                     <details class="w-75 cont-w-100">
                         <summary class="cont-summary fs-3 p-3"><span>Zonas en la que trabajamos</span><i
                                 class="bi bi-plus-lg" aria-hidden="true"></i>
@@ -285,58 +368,38 @@
                     </details>
 
 
+                    <!--Contáctenos-->
+                    <details class="w-75 cont-w-100">
+                        <summary class="cont-summary fs-3 p-3"><span>Contáctenos</span><i class="bi bi-plus-lg"
+                                aria-hidden="true"></i>
+                        </summary>
+
+                        <div class="d-flex align-items-center">
+                            <p class="p-2"><span class="fw-bold "> Teléfono:</span><a class="nav-link"
+                                    href="tel:+34642429362">+34
+                                    642 42 93 62 <i class="bi bi-telephone-fill mx-2 fs-5"></i></a></p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <p class="p-2"><span class="fw-bold">Escríbenos por WhatsApp</span><a
+                                    class="nav-link text-center" href="https://wa.link/gnx4ei">
+                                    <i class="bi bi-whatsapp mx-2 fs-5 text-center"></i></a></p>
+                        </div>
+
+                        <div class="d-flex align-items-center">
+
+                            <p class="p-2"><span class="fw-bold">Correo Electrónico:</span><a class="nav-link"
+                                    href="mailto:atenciahomes@gmail.com">atenciahomes@gmail.com <i
+                                        class="bi bi-envelope-arrow-up-fill"></i></a></p>
+                        </div>
+
+                    </details>
                 </div>
             </div>
 
 
         </section>
 
-        <!--GALERÍA-IMÁGENES-->
-        <section id="galeria">
 
-            <div class="container">
-
-                <h5 class="w-75 w-cont-100 text-center mx-auto fs-2 mb-4 p-3 quienes-somos-h5">Algunas de nuestras
-                    hermosas habitaciones </h5>
-
-                <div class="row">
-
-                    <div class="col-12 col-lg-4 mb-3">
-                        <img class="img-fluid" src="media/img/habitacion1.jpeg" alt="Habitación Preciosa 1"
-                            loading="lazy">
-                    </div>
-
-                    <div class="col-12 col-lg-4 mb-3">
-                        <img class="img-fluid" src="media/img/habitacion2.jpeg" alt="Habitación Preciosa 2"
-                            loading="lazy">
-                    </div>
-
-                    <div class="col-12 col-lg-4 mb-3">
-                        <img class="img-fluid" src="media/img/habitacion3.jpeg" alt="Habitación Preciosa 3"
-                            loading="lazy">
-                    </div class="col-12 col-lg-4">
-
-                    <div class="col-12 col-lg-4 mb-3">
-                        <img class="img-fluid" src="media/img/habitacion4.jpeg" alt="Habitación Preciosa 4"
-                            loading="lazy">
-                    </div>
-
-                    <div class="col-12 col-lg-4 mb-3">
-                        <img class="img-fluid" src="media/img/habitacion5.jpeg" alt="Habitación Preciosa 5"
-                            loading="lazy">
-                    </div>
-
-                    <div class="col-12 col-lg-4 mb-3">
-                        <img class="img-fluid" src="media/img/habitacion6.jpeg" alt="Habitación Preciosa 6"
-                            loading="lazy">
-                    </div>
-
-                </div>
-            </div>
-
-
-
-        </section>
     </main>
     <!-- Modal: Aviso Legal -->
     <div class="modal fade" id="modalAvisoLegal" tabindex="-1" aria-labelledby="modalAvisoLegalLabel"

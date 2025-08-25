@@ -94,6 +94,28 @@ details[open] summary:focus {
 }
 
 /*======================
+MODAL-PERSONALIZADO
+========================*/
+
+.cont-modal {
+    max-width: 100% !important;
+    width: 80% !important;
+    margin-top: 100px !important;
+
+}
+
+.cont-btn-modal {
+
+    background-color: var(--color-azul-oscuro);
+}
+
+.cont-btn-modal:focus {
+
+    background-color: var(--color-azul-oscuro) !important;
+}
+
+
+/*======================
 MEDIA QUERIES PERSONALIZADOS
 ========================*/
 /* XS (≤575.98px): móviles “standard” */
@@ -122,6 +144,12 @@ MEDIA QUERIES PERSONALIZADOS
         font-size: 1.5rem;
         transition: all 0.3s ease;
     }
+
+    .cont-modal {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
 
 
 }

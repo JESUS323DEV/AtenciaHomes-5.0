@@ -102,6 +102,27 @@ MAIN-SECCIÓN-3
 }
 
 /*======================
+MODAL-PERSONALIZADO
+========================*/
+
+.cont-modal {
+    max-width: 100% !important;
+    width: 80% !important;
+    margin-top: 100px !important;
+
+}
+
+.cont-btn-modal {
+
+    background-color: var(--color-azul-oscuro);
+}
+
+.cont-btn-modal:focus {
+
+    background-color: var(--color-azul-oscuro) !important;
+}
+
+/*======================
 MEDIA QUERIES PERSONALIZADOS
 ========================*/
 /* XS (≤575.98px): móviles “standard” */
@@ -127,11 +148,18 @@ MEDIA QUERIES PERSONALIZADOS
         height: auto;
     }
 
+    .cont-modal {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+        
+
+
 }
 
 /* SM (576px–767.98px): móviles horizontales */
 @media (min-width: 576px) and (max-width: 767.98px) {
- 
+
     .h-card-img {
         height: auto;
     }
@@ -145,7 +173,7 @@ MEDIA QUERIES PERSONALIZADOS
 
 /* MD (768px - 991.98px): tablets verticales */
 @media (min-width: 768px) and (max-width: 991.98px) {
- 
+
 
     .cont-w-100 {
         max-width: 100% !important;
@@ -166,6 +194,12 @@ MEDIA QUERIES PERSONALIZADOS
 /* LG (992px–1199.98px): tablets horizontales, mini laptops ipad-pro */
 @media (min-width: 992px) and (max-width: 1199.98px) {
 
+ 
+
+.cont-w-100 {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
 
     .h-card-img {
         height: 300px;
@@ -187,6 +221,12 @@ MEDIA QUERIES PERSONALIZADOS
         align-items: center;
         flex-direction: column;
         justify-content: space-around;
+    }
+
+    .cont-modal {
+        max-width: 100% !important;
+        width: 100% !important;
+
     }
 }
 

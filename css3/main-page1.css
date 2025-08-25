@@ -115,6 +115,8 @@ MODAL-PERSONALIZADO
 .cont-btn-modal {
 
     background-color: var(--color-azul-oscuro);
+    padding: 0.3rem;
+    border-radius: 10px;
 }
 
 .cont-btn-modal:focus {

@@ -115,11 +115,7 @@ MODAL-PERSONALIZADO
     background-color: var(--color-azul-oscuro) !important;
 }
 
-.quienes-somos {
 
-    border-bottom: 2px solid var(--color-amarillo);
-    font-size: 15px !important;
-}
 
 /*======================
 MEDIA QUERIES PERSONALIZADOS
